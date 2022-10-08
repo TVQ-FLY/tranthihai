@@ -1,0 +1,365 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, #FFFF00, #FF0000)
+}
+
+marquee{
+    background-color: #45f3ff;
+    margin: -5px;
+    padding: 20px 0;
+    font-weight: bolder;
+    font-size: 25px;
+    color: #fd0c71;
+}
+
+.navbar{
+    background-color: #FFFF00;
+    padding: 0;
+}
+
+
+
+.navbar h1{
+    color: red;
+    margin: 40px 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+
+.container .about h1{
+    color: white;
+    margin: 40px 450px;
+    padding: 10px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #0d6efd;
+}
+
+.container .about h2{
+    color: white;
+    margin: 40px 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+    text-align: center;
+    -webkit-text-stroke: 0.5px yellow;
+    text-transform: uppercase;
+}
+
+.container .about h2 ::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #f00696;
+    -webkit-text-stroke: 0px yellow;
+    border-right: 2px solid yellow;
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        width: 0;
+    }
+    70%
+    {
+        width: 100%;
+    }
+}
+
+.icon{
+    display: flex;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.icon-text h1{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    margin: 100px 450px 0px 450px; 
+    padding: 10px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: red;
+
+}
+
+.icon .facebook{
+    margin: auto;
+}
+
+
+.facebook .fa-square-facebook{
+    font-size: 200px;
+}
+
+.icon .instagram{
+    margin: auto;
+}
+
+.instagram .fa-instagram{
+    font-size: 200px;
+}
+
+.icon .youtube{
+    margin: auto;
+}
+
+.youtube .fa-youtube{
+    font-size: 200px;
+}
+
+.fa-square-facebook{
+    font-size: 50px;
+    color: blue;
+}
+
+.fa-instagram{
+    font-size: 50px;
+}
+
+.fa-youtube{
+    font-size: 50px;
+    color: red;
+}
+
+.photo-text h1{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    margin: 100px 500px 70px 500px; 
+    padding: 10px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #157347;
+
+}
+
+
+.contact-text h1{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    margin: 100px 620px 70px 620px; 
+    padding: 10px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #ffc107;
+
+}
+
+.contact-content{
+    background-color: yellow;
+    padding: 10px 0 10px 0;
+    margin: 0 150px 0 150px;
+    border-radius: 35px;
+}
+
+.contact-content h2{
+    text-align: center;
+    color: rgb(248, 13, 103);
+    font-size: 40px;
+}
+
+.the-end{
+    background-color: yellow;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: -10px;
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+
+.bootrap{
+    margin-right: 100px;
+}
+
+.btn-primary{
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+.btn-danger{
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+.btn-success{
+    margin-right: 50px;
+    font-size: 20px;
+    width: 120px;
+}
+
+.btn-warning{
+    font-size: 20px;
+    width: 120px;
+}
+
+
+.love-one{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.love-two{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.love-three{
+    display: flex;
+}
+.box{
+    position: relative;
+    width: 380px;
+    height: 420px;
+    background: #f00696;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-left: 0px;
+    margin: auto;
+}
+
+.box::before{
+    content: '';
+    position: absolute;
+    width: 380px;
+    height: 420px;
+    top: -50%;
+    left: -50%;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+    animation: animate 6s linear infinite;
+}
+
+.box::after{
+    content: '';
+    position: absolute;
+    width: 380px;
+    height: 420px;
+    top: -50%;
+    left: -50%;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+.form1{
+    position: absolute;
+    z-index: 10;
+    background-image: url(img2.png);
+    background-size: 420px;
+    inset: 5px;
+    border-radius: 8px;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form2{
+    position: absolute;
+    z-index: 10;
+    background-image: url(img1.png);
+    background-size: 420px;
+    inset: 5px;
+    border-radius: 8px;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form3{
+    position: absolute;
+    z-index: 10;
+    background-image: url(img3.png);
+    background-size: 420px;
+    inset: 5px;
+    border-radius: 8px;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form4{
+    position: absolute;
+    z-index: 10;
+    background-image: url(img4.png);
+    background-size: 420px;
+    inset: 5px;
+    border-radius: 8px;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form5{
+    position: absolute;
+    z-index: 10;
+    background-image: url(img5.png);
+    background-size: 420px;
+    inset: 5px;
+    border-radius: 8px;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form6{
+    position: absolute;
+    z-index: 10;
+    background-image: url(img6.png);
+    background-size: 420px;
+    inset: 5px;
+    border-radius: 8px;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+
