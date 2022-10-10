@@ -19,27 +19,27 @@
 </head>
 
 
-<body>
-    <div class="navbar">
-        <marquee id = "welcome">HELLO ! WELCOME TO MY WEBSITE !!! </marquee>
-        <h1><span class="auto-text"></h1>
-        
-        <div class="bootrap">
-            <a href="#about"><button type="button" class="btn btn-primary">Thông Tin</button></a>
-            <a href="#icon"><button type="button" class="btn btn-danger">Mạng Xã Hội</button></a>
-            <a href="#photo"><button type="button" class="btn btn-success">Ảnh</button></a>
-            <a href="#contact"><button type="button" class="btn btn-warning">Liên Hệ</button></a>
-        </div>
-    </div>
-    <div class="container">
-        <div id= "about"class="about">
+<body >
+    
+        <div class="navbar">
+            <marquee id = "welcome">HELLO ! WELCOME TO MY WEBSITE !!! </marquee>
+            <h1><span class="auto-text"></h1>
             
+            <div class="bootrap">
+                <a href="#about"><button type="button" class="btn btn-primary">Thông Tin</button></a>
+                <a href="#icon"><button type="button" class="btn btn-danger">Mạng Xã Hội</button></a>
+                <a href="#photo"><button type="button" class="btn btn-success">Ảnh</button></a>
+                <a href="#contact"><button type="button" class="btn btn-warning">Liên Hệ</button></a>
+            </div>
+        </div>
+    
+        <div id= "about"class="about">
             <h1><span class="auto-text1"></h1>
             <h2>Name: Trần Thị Hải</h2>
             <h2>Class: K63 - Đại học Vinh</h2>
             <h2>Address: Yên Thành - Nghệ An</h2>
         </div>
-
+    
         <div  id= "icon" class="icon-text">
             <h1><span class="auto-text2"></h1>
         </div>
@@ -87,65 +87,78 @@
             </div>
             
         </div>
-    </div>
 
-    <div  id= "contact" class="contact-text">
-        <h1><span class="auto-text4"></h1>
-    </div>
 
-    <div class="contact-content">
-        <h2>Hoa đã có chủ vui lòng không liên hệ nếu ko vì lý do công việc</h2>
-        <h2>Hoặc có thể liên hệ với chủ của hoa: <a href="https://www.facebook.com/tranvanquyen.01/" target="_blank">facebook/tranvanquyen.01</a></h2>
+
+        <div  id= "contact" class="contact-text">
+            <h1><span class="auto-text4"></h1>
+        </div>
+        <div class="contact-content">
+            <h2>Hoa đã có chủ vui lòng không liên hệ nếu ko vì lý do công việc</h2>
+            <h2>Hoặc có thể liên hệ với chủ của hoa: <a href="https://www.facebook.com/tranvanquyen.01/" target="_blank">facebook/tranvanquyen.01</a></h2>
+        </div>
+    <div class="script">
+        <script>
+            var typed = new Typed(".auto-text", {
+                strings: ["Trần Thị Hải", "Hải Cute", "NY TVQ"],
+                typeSpeed: 150, 
+                backSpeed: 150,
+                loop: true
+            })
+        </script>
+    
+        <script>
+            var typed = new Typed(".auto-text1", {
+                strings: ["Thông Tin", "About"],
+                typeSpeed: 150, 
+                backSpeed: 150,
+                loop: true
+            })
+        </script>
+    
+        <script>
+            var typed = new Typed(".auto-text2", {
+                strings: ["Mạng Xã hội", "Social Network"],
+                typeSpeed: 150, 
+                backSpeed: 150,
+                loop: true
+            })
+        </script>
+    
+        <script>
+            var typed = new Typed(".auto-text3", {
+                strings: ["Ảnh", "Photo"],
+                typeSpeed: 150, 
+                backSpeed: 150,
+                loop: true
+            })
+        </script>
+    
+        <script>
+            var typed = new Typed(".auto-text4", {
+                strings: ["Liên Hệ", "Contact"],
+                typeSpeed: 150, 
+                backSpeed: 150,
+                loop: true
+            })
+        </script>
     </div>
+    
+        
+    
+
+    
+        
+        
+    
 	
-	<script>
-		var typed = new Typed(".auto-text", {
-			strings: ["Trần Thị Hải", "Hải Cute", "NY TVQ"],
-			typeSpeed: 150, 
-			backSpeed: 150,
-			loop: true
-		})
-	</script>
-
-    <script>
-		var typed = new Typed(".auto-text1", {
-			strings: ["Thông Tin", "About"],
-			typeSpeed: 150, 
-			backSpeed: 150,
-			loop: true
-		})
-	</script>
-
-    <script>
-        var typed = new Typed(".auto-text2", {
-            strings: ["Mạng Xã hội", "Social Network"],
-            typeSpeed: 150, 
-            backSpeed: 150,
-            loop: true
-        })
-    </script>
-
-    <script>
-        var typed = new Typed(".auto-text3", {
-            strings: ["Ảnh", "Photo"],
-            typeSpeed: 150, 
-            backSpeed: 150,
-            loop: true
-        })
-    </script>
-
-    <script>
-        var typed = new Typed(".auto-text4", {
-            strings: ["Liên Hệ", "Contact"],
-            typeSpeed: 150, 
-            backSpeed: 150,
-            loop: true
-        })
-    </script>
+	
     <footer class="the-end">
-        <h3>TRẦN THỊ HẢI</h3>
-        <h4>YÊN THÀNH - NGHỆ AN - VIỆT NAM</h4>
-        <h5>-- The End --</h5>
+        <div class="container">
+            <h3>TRẦN THỊ HẢI</h3>
+            <h4>YÊN THÀNH - NGHỆ AN - VIỆT NAM</h4>
+            <h5>-- The End --</h5>
+        </div>
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
