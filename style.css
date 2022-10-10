@@ -407,26 +407,26 @@ marquee{
     
     
     .bootrap{
-        display: flex;   
-        margin-left: -10px;
+        display: inline;   
+        margin-left: 0;
         margin-top: 20px;
     }
 
     .btn-primary{
         margin-right: 0;
         width: 100px;
-        margin-left: 30px;
+        margin-left: 20px;
     }
 
     .btn-danger{
         margin-right: 0;
         width: 100px;
-        margin-left: 20px;
+        margin-left: 15px;
     }
     .btn-success{
         margin-right: 0;
         width: 100px;
-        margin-left: 20px;
+        margin-left: 15px;
         padding: 20px 0;
     }
 
@@ -572,7 +572,6 @@ marquee{
     .box{
         width: 350px;
         margin-bottom: 20px;
-        margin-left: 10px;
         
     }
     .form1{
@@ -613,8 +612,237 @@ marquee{
         font-size: 20px;
     }
 }
+
+
+
 /* Tablet: width >= 740px and width <1024px */
 @media only screen and (min-width: 46.25em) and (max-width: 63.9375em){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .script{
+        margin: 0;
+        padding: 0;
+    }
     
+    .navbar h1{
+        margin: 40px 60px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bolder;
+        text-align: center;
+        font-size: 50px;
+        width: 100%;
+    }
+    
+    
+    .bootrap{
+        display: inline;   
+        margin-left: 0;
+        margin-top: 20px;
+        margin: auto;
+    }
+
+    .btn-primary{
+        margin-right: 0;
+        width: 100px;
+        margin-left: 20px;
+    }
+
+    .btn-danger{
+        margin-right: 0;
+        width: 100px;
+        margin-left: 15px;
+    }
+    .btn-success{
+        margin-right: 0;
+        width: 100px;
+        margin-left: 15px;
+        padding: 20px 0;
+    }
+
+    .btn-warning{
+        display: none;
+    }
+
+
+
+    .about h1{
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bolder;
+        font-size: 25px;
+        margin: auto;
+        margin-top: 20px;
+        width: 200px;
+        text-align: center;
+        border-radius: 20px;
+        background-color: #0d6efd;
+    }
+    
+    .about h2{
+        color: white;
+        margin: auto;
+        margin-top: 20px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bolder;
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+        -webkit-text-stroke: 0.5px yellow;
+        text-transform: uppercase;
+    }
+    
+    .about h2 ::before{
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        color: #f00696;
+        -webkit-text-stroke: 0px yellow;
+        border-right: 2px solid yellow;
+        animation: animate 6s linear infinite;
+    }
+
+
+    .icon{
+        display: inline;
+    }
+
+    .icon-text h1{
+        text-align: center;
+        color: white;
+        margin: auto; 
+        margin-top: 40px;
+        width: 230px;
+        padding: 10px 0;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bolder;
+        font-size: 25px;
+        text-align: center;
+        align-items: center;
+        border-radius: 20px;
+        background-color: red;
+    
+    }
+
+    
+    
+    .icon .facebook{
+        margin: auto;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+
+    .facebook .fa-square-facebook{
+        font-size: 200px;
+    }
+
+    .icon .instagram{
+        margin: auto;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .instagram .fa-instagram{
+        font-size: 200px;
+    }
+
+    .icon .youtube{
+        margin: auto;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .youtube .fa-youtube{
+        font-size: 200px;
+        margin-bottom: 50px;
+    }
+
+    .fa-square-facebook{
+        font-size: 50px;
+        color: blue;
+    }
+
+    .fa-instagram{
+        font-size: 50px;
+    }
+
+    .fa-youtube{
+        font-size: 50px;
+        color: red;
+    }
+
+    
+
+    .photo-text h1{
+        text-align: center;
+        font-size: 30px;
+        color: white;
+        margin: auto; 
+        margin-bottom: 20px;
+        padding: 10px 0;
+        width: 200px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bolder;
+        text-align: center;
+        align-items: center;
+        border-radius: 20px;
+        background-color: #157347;
+    }
+
+
+    .love-one{
+        display: inline;
+       
+    }
+
+    .box{
+        width: 350px;
+        margin-bottom: 20px;
+        
+    }
+    .form1{
+        text-align: center;
+    }
+
+
+    .love-two{
+        display: inline;
+    }
+
+
+    .contact-text h1{
+        text-align: center;
+        font-size: 30px;
+        color: white;
+        margin: auto; 
+        margin-bottom: 20px;
+        padding: 10px 0;
+        width: 200px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bolder;
+        text-align: center;
+        align-items: center;
+        border-radius: 20px;
+        background-color: #157347;
+    }
+
+    .contact-content h2{
+        display: none;
+        margin: 0;
+    }    
+
+    .the-end{
+        width: 100%;
+    }
+    .the-end h4{
+        width: 100%;
+        font-size: 20px;
+    }
 }
 
