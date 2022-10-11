@@ -52,13 +52,12 @@ marquee{
     background-color: #0d6efd;
 }
 .about h2{
-    color: white;
+    color: rgb(255, 0, 136);
     margin: 40px 40px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
     font-size: 40px;
     text-align: center;
-    -webkit-text-stroke: 0.5px yellow;
     text-transform: uppercase;
 }
 
@@ -114,6 +113,9 @@ marquee{
     margin: auto;
 }
 
+.icon .facebook h2{
+    margin-left: 20px;
+}
 
 .facebook .fa-square-facebook{
     font-size: 200px;
@@ -121,6 +123,10 @@ marquee{
 
 .icon .instagram{
     margin: auto;
+}
+
+.icon .instagram h2{
+    margin-left: 20px;
 }
 
 .instagram .fa-instagram{
@@ -144,7 +150,29 @@ marquee{
     font-size: 50px;
 }
 
+.twitter .fa-twitter{
+    margin: auto;
+    font-size: 200px;
+}
+
+.icon .twitter h2{
+    margin-left: 50px;
+}
+
+.fa-twitter{
+    font-size: 50px;
+}
+
+.youtube .fa-youtube{
+    margin-left: 40px;
+}
+
+.icon .youtube h2{
+    margin-left: 80px;
+}
+
 .fa-youtube{
+    margin-left: 40px;
     font-size: 50px;
     color: red;
 }
@@ -186,7 +214,7 @@ marquee{
 
 .contact-content{
     background-color: yellow;
-    padding: 10px 0 10px 0;
+    padding: 10px 10px;
     margin: 0 150px 0 150px;
     border-radius: 35px;
 }
@@ -385,6 +413,43 @@ marquee{
 }
 
 
+.form7{
+    position: absolute;
+    z-index: 10;
+    background-image: url(img7.png);
+    background-size: 420px;
+    inset: 5px;
+    border-radius: 8px;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form8{
+    position: absolute;
+    z-index: 10;
+    background-image: url(img8.png);
+    background-size: 420px;
+    inset: 5px;
+    border-radius: 8px;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form9{
+    position: absolute;
+    z-index: 10;
+    background-image: url(img9.png);
+    background-size: 420px;
+    inset: 5px;
+    border-radius: 8px;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+
 /* Mobile: width <740px */
 @media only screen and (max-width: 46.1875em){
     *{
@@ -404,18 +469,20 @@ marquee{
         font-size: 40px;
         width: 100%;
     }
-    
+    .about h2{
+        color: rgb(255, 0, 136);
+    }
     
     .bootrap{
         display: inline;   
         margin-left: 0;
         margin-top: 20px;
+        margin: auto;
     }
 
     .btn-primary{
         margin-right: 0;
         width: 100px;
-        margin-left: 20px;
     }
 
     .btn-danger{
@@ -440,7 +507,7 @@ marquee{
         color: white;
         font-family: 'Montserrat', sans-serif;
         font-weight: bolder;
-        font-size: 25px;
+        font-size: 20px;
         margin: auto;
         margin-top: 20px;
         width: 200px;
@@ -450,7 +517,7 @@ marquee{
     }
     
     .about h2{
-        color: white;
+        color: rgb(248, 13, 103);
         margin: auto;
         margin-top: 20px;
         font-family: 'Montserrat', sans-serif;
@@ -458,7 +525,6 @@ marquee{
         width: 100%;
         font-size: 20px;
         text-align: center;
-        -webkit-text-stroke: 0.5px yellow;
         text-transform: uppercase;
     }
     
@@ -520,13 +586,30 @@ marquee{
         font-size: 200px;
     }
 
+    .icon .twitter{
+        margin: auto;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .icon .twitter h2{
+        margin-left: -20px;
+    }
+    .twitter .fa-twitter{
+        font-size: 200px;
+    }
+
     .icon .youtube{
         margin: auto;
         text-align: center;
         margin-top: 30px;
     }
 
+    .icon .youtube h2{
+        margin-left: -30px;
+    }
     .youtube .fa-youtube{
+        margin-left: -30px;
         font-size: 200px;
         margin-bottom: 50px;
     }
@@ -583,6 +666,9 @@ marquee{
         display: inline;
     }
 
+    .love-three{
+        display: inline;
+    }
 
     .contact-text h1{
         text-align: center;
@@ -600,7 +686,7 @@ marquee{
         background-color: #157347;
     }
 
-    .contact-content h2{
+    .contact-content{
         display: none;
     }    
 
@@ -646,51 +732,54 @@ marquee{
 
     .btn-primary{
         margin-right: 0;
-        width: 100px;
-        margin-left: 20px;
+        width: 200px;
+        margin-right: 50px;
+        padding: 20px 0;
     }
 
     .btn-danger{
         margin-right: 0;
-        width: 100px;
-        margin-left: 15px;
+        width: 200px;
+        margin-right: 50px;
+        padding: 20px 0;
     }
     .btn-success{
         margin-right: 0;
-        width: 100px;
+        width: 200px;
         margin-left: 15px;
         padding: 20px 0;
     }
 
     .btn-warning{
-        /* display: none; */
+       display: none; 
     }
 
+    .contact-content{
+        display: none;
+    }
 
 
     .about h1{
         color: white;
         font-family: 'Montserrat', sans-serif;
         font-weight: bolder;
-        font-size: 25px;
+        font-size: 30px;
         margin: auto;
         margin-top: 20px;
-        width: 200px;
+        padding: 20px 0;
+        width: 250px;
         text-align: center;
         border-radius: 20px;
         background-color: #0d6efd;
     }
     
     .about h2{
-        color: white;
-        margin: auto;
-        margin-top: 20px;
+        color: rgb(255, 0, 136);
+        margin: 40px 40px;
         font-family: 'Montserrat', sans-serif;
         font-weight: bolder;
-        width: 100%;
-        font-size: 20px;
+        font-size: 40px;
         text-align: center;
-        -webkit-text-stroke: 0.5px yellow;
         text-transform: uppercase;
     }
     
@@ -702,8 +791,6 @@ marquee{
         width: 0;
         height: 100%;
         color: #f00696;
-        -webkit-text-stroke: 0px yellow;
-        border-right: 2px solid yellow;
         animation: animate 6s linear infinite;
     }
 
@@ -717,11 +804,11 @@ marquee{
         color: white;
         margin: auto; 
         margin-top: 40px;
-        width: 230px;
-        padding: 10px 0;
+        padding: 20px 0;
+        width: 250px;
         font-family: 'Montserrat', sans-serif;
         font-weight: bolder;
-        font-size: 25px;
+        font-size: 30px;
         text-align: center;
         align-items: center;
         border-radius: 20px;
@@ -749,6 +836,20 @@ marquee{
     }
 
     .instagram .fa-instagram{
+        font-size: 200px;
+    }
+
+    .icon .twitter{
+        margin: auto;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .icon .twitter h2{
+        margin-left: 10px;
+    }
+
+    .twitter .fa-twitter{
         font-size: 200px;
     }
 
@@ -830,6 +931,10 @@ marquee{
         align-items: center;
         border-radius: 20px;
         background-color: #157347;
+    }
+
+    .love-three{
+        display: inline;
     }
 
     .contact-content h2{
