@@ -462,16 +462,23 @@ marquee{
         padding: 0;
     }
     
+
+    .content-body{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
     .navbar h1{
-        margin: 40px 60px;
+        margin: 40px 90px;
         font-family: 'Montserrat', sans-serif;
         font-weight: bolder;
-        font-size: 40px;
+        font-size: 30px;
         width: 100%;
     }
     .about h2{
         color: rgb(255, 0, 136);
     }
+    
     
     .bootrap{
         display: inline;   
@@ -523,7 +530,7 @@ marquee{
         font-family: 'Montserrat', sans-serif;
         font-weight: bolder;
         width: 100%;
-        font-size: 20px;
+        font-size: 18px;
         text-align: center;
         text-transform: uppercase;
     }
@@ -693,7 +700,7 @@ marquee{
     .the-end{
         width: 100%;
     }
-    .the-end h4{
+    .the-end .container h4{
         width: 100%;
         font-size: 20px;
     }
