@@ -469,10 +469,11 @@ marquee{
         padding: 0;
     }
     .navbar h1{
-        margin: 40px 90px;
+        
         font-family: 'Montserrat', sans-serif;
         font-weight: bolder;
         font-size: 30px;
+        text-align: center;
         width: 100%;
     }
     .about h2{
@@ -702,7 +703,7 @@ marquee{
     }
     .the-end .container h4{
         width: 100%;
-        font-size: 20px;
+        font-size: 16px;
     }
 }
 
