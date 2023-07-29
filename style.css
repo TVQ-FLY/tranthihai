@@ -308,6 +308,16 @@ marquee{
 }
 
 .love-six{
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.love-seven{
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.love-eight{
     display: flex;
 }
 .box{
@@ -576,6 +586,77 @@ marquee{
     flex-direction: column;
 }
 
+.form19{
+    position: absolute;
+    z-index: 10;
+    background-image: url(img19.png);
+    background-size: 420px;
+    inset: 5px;
+    border-radius: 8px;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form20{
+    position: absolute;
+    z-index: 10;
+    background-image: url(img20.png);
+    background-size: 420px;
+    inset: 5px;
+    border-radius: 8px;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form21{
+    position: absolute;
+    z-index: 10;
+    background-image: url(img21.png);
+    background-size: 420px;
+    inset: 5px;
+    border-radius: 8px;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form22{
+    position: absolute;
+    z-index: 10;
+    background-image: url(img22.png);
+    background-size: 420px;
+    inset: 5px;
+    border-radius: 8px;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form23{
+    position: absolute;
+    z-index: 10;
+    background-image: url(img23.png);
+    background-size: 420px;
+    inset: 5px;
+    border-radius: 8px;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form24{
+    position: absolute;
+    z-index: 10;
+    background-image: url(img24.png);
+    background-size: 420px;
+    inset: 5px;
+    border-radius: 8px;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+}
 
 /* Mobile: width <740px */
 @media only screen and (max-width: 46.1875em){
@@ -817,6 +898,13 @@ marquee{
         display: inline;
     }
 
+    .love-seven{
+        display: inline;
+    }
+
+    .love-eight{
+        display: inline;
+    }
 
     .contact-text h1{
         text-align: center;
@@ -1076,6 +1164,13 @@ marquee{
         display: inline;
     }
 
+    .love-seven{
+        display: inline;
+    }
+
+    .love-eight{
+        display: inline;
+    }
 
     .contact-text h1{
         text-align: center;
