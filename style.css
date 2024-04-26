@@ -318,6 +318,12 @@ marquee{
 }
 
 .love-eight{
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.love-nine{
+    margin-bottom: 30px;
     display: flex;
 }
 .box{
@@ -658,6 +664,42 @@ marquee{
     flex-direction: column;
 }
 
+.form25{
+    position: absolute;
+    z-index: 10;
+    background-image: url(img25.png);
+    background-size: 420px;
+    inset: 5px;
+    border-radius: 8px;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form26{
+    position: absolute;
+    z-index: 10;
+    background-image: url(img26.png);
+    background-size: 420px;
+    inset: 5px;
+    border-radius: 8px;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form27{
+    position: absolute;
+    z-index: 10;
+    background-image: url(img27.png);
+    background-size: 420px;
+    inset: 5px;
+    border-radius: 8px;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
 /* Mobile: width <740px */
 @media only screen and (max-width: 46.1875em){
     *{
@@ -903,6 +945,10 @@ marquee{
     }
 
     .love-eight{
+        display: inline;
+    }
+
+    .love-nine{
         display: inline;
     }
 
@@ -1169,6 +1215,10 @@ marquee{
     }
 
     .love-eight{
+        display: inline;
+    }
+
+    .love-nine{
         display: inline;
     }
 
