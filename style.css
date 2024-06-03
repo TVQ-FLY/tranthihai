@@ -326,6 +326,11 @@ marquee{
     margin-bottom: 30px;
     display: flex;
 }
+
+.love-ten{
+    margin-bottom: 30px;
+    display: flex;
+}
 .box{
     position: relative;
     width: 380px;
@@ -700,6 +705,42 @@ marquee{
     flex-direction: column;
 }
 
+.form28{
+    position: absolute;
+    z-index: 10;
+    background-image: url(img28.png);
+    background-size: 420px;
+    inset: 5px;
+    border-radius: 8px;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form29{
+    position: absolute;
+    z-index: 10;
+    background-image: url(img29.png);
+    background-size: 420px;
+    inset: 5px;
+    border-radius: 8px;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form30{
+    position: absolute;
+    z-index: 10;
+    background-image: url(img30.png);
+    background-size: 420px;
+    inset: 5px;
+    border-radius: 8px;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
 /* Mobile: width <740px */
 @media only screen and (max-width: 46.1875em){
     *{
@@ -949,6 +990,10 @@ marquee{
     }
 
     .love-nine{
+        display: inline;
+    }
+
+    .love-ten{
         display: inline;
     }
 
@@ -1219,6 +1264,10 @@ marquee{
     }
 
     .love-nine{
+        display: inline;
+    }
+
+    .love-ten{
         display: inline;
     }
 
