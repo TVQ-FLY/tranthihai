@@ -16,38 +16,3 @@ document.addEventListener("DOMContentLoaded", function() {
         imageGrid.appendChild(col);
     }
 });
-
-var typed = new Typed(".auto-text", {
-    strings: ["Hải Cute", "Trần Thị Hải"],
-    typeSpeed: 150, 
-    backSpeed: 150,
-    loop: true
-})
-
-var typed = new Typed(".auto-text1", {
-    strings: ["Thông Tin", "About"],
-    typeSpeed: 150, 
-    backSpeed: 150,
-    loop: true
-})
-
-var typed = new Typed(".auto-text2", {
-    strings: ["Infor", "Profile"],
-    typeSpeed: 150, 
-    backSpeed: 150,
-    loop: true
-})
-
-var typed = new Typed(".auto-text3", {
-    strings: ["Image", "Photo"],
-    typeSpeed: 150, 
-    backSpeed: 150,
-    loop: true
-})
-
-var typed = new Typed(".auto-text4", {
-    strings: ["Liên Hệ", "Contact"],
-    typeSpeed: 150, 
-    backSpeed: 150,
-    loop: true
-})
