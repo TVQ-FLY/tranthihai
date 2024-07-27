@@ -2,7 +2,7 @@
 // Tăng số lượng ảnh hiển thị ở biến totalImages
 document.addEventListener("DOMContentLoaded", function() {
     const imageGrid = document.getElementById("image-grid");
-    const totalImages = 46; // Số lượng ảnh mà bạn có
+    const totalImages = 51; // Số lượng ảnh mà bạn có
 
     for (let i = 1; i <= totalImages; i++) {
         const img = document.createElement("img");
