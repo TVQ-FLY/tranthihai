@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", function() {
         img.src = `Image/img${i}.png`; // Tên file ảnh theo thứ tự
         img.alt = `Image ${i}`;
         img.classList.add("w-full", "h-auto");
-
         const col = document.createElement("div");
         col.classList.add("image-container"); // Thêm lớp CSS cho thẻ div chứa ảnh
         col.appendChild(img);
