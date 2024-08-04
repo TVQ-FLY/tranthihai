@@ -9,7 +9,7 @@
 
 /* Bố cục grid ảnh */
 #image-grid {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Đặt kích thước tối thiểu cho mỗi cột */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Đặt kích thước tối thiểu cho mỗi cột */
 }
 
 /* Hiệu ứng màu của từng ảnh */
