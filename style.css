@@ -6,9 +6,13 @@
     box-sizing: border-box;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
 }
-    
 
-/* Hieu ung mau cua tung anh */
+/* Bố cục grid ảnh */
+#image-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Đặt kích thước tối thiểu cho mỗi cột */
+}
+
+/* Hiệu ứng màu của từng ảnh */
 .image-container {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     box-shadow: 0 4px 8px 2px #ffffff, /* Tăng blur-radius và thêm spread-radius */

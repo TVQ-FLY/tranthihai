@@ -26,13 +26,17 @@
         </div>
         <div class="button-logo flex justify-center my-3">
             <a href="#about"><button type="button"
-                class="bg-yellow-400 shadow-lg shadow-blue-500/50 mx-3 py-3 px-11 font-bold text-xl text-white hover:scale-110">Logo</button></a>
+                class="bg-yellow-400 shadow-lg shadow-yellow-500/50 mx-3 py-3 px-11 font-bold text-xl text-white hover:scale-110">Logo</button></a>
         </div>
-        <div class="logo flex justify-center items-center">
-            <img src="Image/Logo.png" alt="" class="mx-2 w-[100px]">
-            <img src="Image/Logo-black.png" alt="" class="mx-2 w-[100px]">
-            <img src="Image/logo-number.png" alt="" class="mx-2 w-[100px]">
-            <img src="Image/logo-black-number.png" alt="" class="mx-2 w-[100px]">
+        <div class="logo grid justify-center items-center sm:flex">
+            <div class="image-logo flex my-2">
+                <img src="Image/Logo.png" alt="" class="mx-2 w-[100px]">
+                <img src="Image/logo-black-number.png" alt="" class="mx-2 w-[100px]">
+            </div>
+            <div class="image-logo flex my-2">
+                <img src="Image/Logo-black.png" alt="" class="mx-2 w-[100px]">
+                <img src="Image/logo-number.png" alt="" class="mx-2 w-[100px]">
+            </div>
         </div>
         <div class="profile-all flex justify-center items-center shadow-gray-50">
             <div class="button-profile hidden sm:flex justify-center mt-3">
@@ -91,8 +95,8 @@
             </button>
         </div>
 
-        <!-- Hien thi anh theo js bo cuc grid -->
-        <div id="image-grid" class=" grid grid-cols-1 gap-4 px-5 py-5 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-3">
+        <!-- Hiển thị ảnh theo bố cục Grid của Js -->
+        <div id="image-grid" class="grid grid-cols-1 mx-auto max-w-[90%] gap-[20px] px-5 py-5 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-3">
 
         </div>
 
