@@ -2,7 +2,7 @@
 const a = document.querySelector(".content-body")
 function askForPassword() {
     var correctPassword = '27/07/2004'; // Thay thế bằng mật khẩu thực tế của bạn
-    var password = prompt('Vui lòng nhập ngày tháng năm sinh của bạn để tiếp tục truy cập (ví dụ: 01/01/2001)');
+    var password = prompt('Vui lòng nhập ngày tháng năm sinh của bạn để tiếp tục truy cập Website (ví dụ: 01/01/2001)');
 
     if (password === correctPassword) {
         a.classList.remove("hidden")
