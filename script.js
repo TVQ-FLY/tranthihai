@@ -1,17 +1,17 @@
 // Ẩn nội dung webiste với mật khẩu
-const a = document.querySelector(".content-body")
-function askForPassword() {
-    var correctPassword = '27'; // Thay thế bằng mật khẩu của bạn
-    var password = prompt('Nhập vào ngày sinh của bạn (ví dụ: 01)');
+// const a = document.querySelector(".content-body")
+// function askForPassword() {
+//     var correctPassword = '27'; // Thay thế bằng mật khẩu của bạn
+//     var password = prompt('Nhập vào ngày sinh của bạn (ví dụ: 01)');
 
-    if (password === correctPassword) {
-        a.classList.remove("hidden")
-    } else {
-        alert('Mật khẩu không đúng, bạn không phải là cô ấy vui lòng dừng truy cập =((');
-        // Tùy chọn: Chuyển hướng người dùng ra khỏi trang
-        window.location.href = 'https://google.com';
-    }
-}
+//     if (password === correctPassword) {
+//         a.classList.remove("hidden")
+//     } else {
+//         alert('Mật khẩu không đúng, bạn không phải là cô ấy vui lòng dừng truy cập =((');
+//         // Tùy chọn: Chuyển hướng người dùng ra khỏi trang
+//         window.location.href = 'https://google.com';
+//     }
+// }
 
 askForPassword();
 
