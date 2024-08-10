@@ -13,7 +13,8 @@
 //     }
 // }
 
-askForPassword();
+// askForPassword();
+
 
 // Hiển thị ảnh (Thêm ảnh theo cấu trúc img + số thứ tự đuôi PNG vào Image)
 // Tăng số lượng ảnh hiển thị ở biến totalImages
