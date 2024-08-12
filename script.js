@@ -1,19 +1,35 @@
 // Ẩn nội dung webiste với mật khẩu
-// const a = document.querySelector(".content-body")
-// function askForPassword() {
-//     var correctPassword = '27'; // Thay thế bằng mật khẩu của bạn
-//     var password = prompt('Nhập vào ngày sinh của bạn (ví dụ: 01)');
+const a = document.querySelector(".content-body")
+function askForPassword() {
+    var correctPassword = '27072004'; // Thay thế bằng mật khẩu của bạn
+    var password = prompt('Nhập vào ngày sinh của bạn (ví dụ: 01012001)');
 
-//     if (password === correctPassword) {
-//         a.classList.remove("hidden")
-//     } else {
-//         alert('Mật khẩu không đúng, bạn không phải là cô ấy vui lòng dừng truy cập =((');
-//         // Tùy chọn: Chuyển hướng người dùng ra khỏi trang
-//         window.location.href = 'https://google.com';
-//     }
-// }
+    if (password === correctPassword) {
+        a.classList.remove("hidden")
+    } else {
+        alert('Mật khẩu không đúng, bạn không phải là cô ấy vui lòng dừng truy cập =((');
+        // Tùy chọn: Chuyển hướng người dùng ra khỏi trang
+        window.location.href = 'https://google.com';
+    }
+}
 
-// askForPassword();
+askForPassword();
+
+
+// Loading... 
+document.addEventListener("DOMContentLoaded", function() {
+    // Chờ 3 giây trước khi ẩn loading và hiển thị nội dung
+    setTimeout(function() {
+        // Thay đổi trạng thái hiển thị khi nội dung DOM đã sẵn sàng
+        var loading = document.getElementById("loading");
+        var content = document.getElementById("content");
+
+        // Ẩn loading và hiện nội dung
+        loading.style.display = "none";
+        content.style.visibility = "visible";
+    }, 1000); // 3000 ms = 3 giây
+});
+
 
 
 // Hiển thị ảnh (Thêm ảnh theo cấu trúc img + số thứ tự đuôi PNG vào Image)
