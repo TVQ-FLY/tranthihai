@@ -1,6 +1,8 @@
 // Ẩn nội dung webiste với mật khẩu
 const a = document.querySelector(".content-body")
 function askForPassword() {
+    var loading = document.getElementById("loading");
+    loading.style.display = "none";
     var correctPassword = '27072004'; // Thay thế bằng mật khẩu của bạn
     var password = prompt('Nhập vào ngày sinh của bạn (ví dụ: 01012001)');
 
