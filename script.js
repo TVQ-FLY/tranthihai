@@ -19,7 +19,7 @@ function askForPassword() {
 // Hàm để bắt đầu loading
 function startLoading() {
     document.addEventListener("DOMContentLoaded", function() {
-        // Chờ 3 giây trước khi ẩn loading và hiển thị nội dung
+        // Chờ 4 giây trước khi ẩn loading và hiển thị nội dung
         setTimeout(function() {
             var loading = document.getElementById("loading");
             var content = document.getElementById("content");
@@ -27,7 +27,7 @@ function startLoading() {
             // Ẩn loading và hiện nội dung
             loading.style.display = "none";
             content.style.visibility = "visible";
-        }, 2000); // 2000 ms = 2 giây
+        }, 4000); // 4000 ms = 4 giây
     });
 }
 
