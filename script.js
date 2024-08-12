@@ -1,36 +1,39 @@
-// Ẩn nội dung webiste với mật khẩu
-const a = document.querySelector(".content-body")
+// Ẩn nội dung trang web cho đến khi nhập mật khẩu đúng
+const a = document.querySelector(".content-body");
+
 function askForPassword() {
-    var loading = document.getElementById("loading");
-    loading.style.display = "none";
-    var correctPassword = '27072004'; // Thay thế bằng mật khẩu của bạn
-    var password = prompt('Nhập vào ngày sinh của bạn (ví dụ: 01012001)');
+    const correctPassword = '27072004'; // Thay thế bằng mật khẩu của bạn
+    const password = prompt('Nhập vào ngày sinh của bạn (ví dụ: 01012001)');
 
     if (password === correctPassword) {
-        a.classList.remove("hidden")
+        // Khi mật khẩu đúng, hiển thị nội dung và bắt đầu quá trình loading
+        a.classList.remove("hidden");
+        startLoading();
     } else {
         alert('Mật khẩu không đúng, bạn không phải là cô ấy vui lòng dừng truy cập =((');
-        // Tùy chọn: Chuyển hướng người dùng ra khỏi trang
+        // Chuyển hướng người dùng ra khỏi trang
         window.location.href = 'https://google.com';
     }
 }
 
+// Hàm để bắt đầu loading
+function startLoading() {
+    document.addEventListener("DOMContentLoaded", function() {
+        // Chờ 3 giây trước khi ẩn loading và hiển thị nội dung
+        setTimeout(function() {
+            var loading = document.getElementById("loading");
+            var content = document.getElementById("content");
+
+            // Ẩn loading và hiện nội dung
+            loading.style.display = "none";
+            content.style.visibility = "visible";
+        }, 2000); // 2000 ms = 2 giây
+    });
+}
+
+// Yêu cầu nhập mật khẩu khi tải trang
 askForPassword();
 
-
-// Loading... 
-document.addEventListener("DOMContentLoaded", function() {
-    // Chờ 3 giây trước khi ẩn loading và hiển thị nội dung
-    setTimeout(function() {
-        // Thay đổi trạng thái hiển thị khi nội dung DOM đã sẵn sàng
-        var loading = document.getElementById("loading");
-        var content = document.getElementById("content");
-
-        // Ẩn loading và hiện nội dung
-        loading.style.display = "none";
-        content.style.visibility = "visible";
-    }, 1000); // 3000 ms = 3 giây
-});
 
 
 
