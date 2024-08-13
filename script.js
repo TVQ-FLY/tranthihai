@@ -16,7 +16,6 @@
 //     }
 // }
 
-// // Yêu cầu nhập mật khẩu khi tải trang
 // askForPassword();
 
 
@@ -41,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // Back top
 // Get the button
-let backToTopBtn = document.getElementBycl("backToTopBtn");
+let backToTopBtn = document.getElementById("backToTopBtn");
 
 // Show the button when the user scrolls down 20px from the top of the document
 window.onscroll = function() {
