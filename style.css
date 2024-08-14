@@ -8,11 +8,10 @@
     cursor: url(Image/iconmonstr-heart-filled.svg), auto;
 }
 
-/* Hiệu ứng màu của từng ảnh */
 .image-container {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    box-shadow: 0 4px 8px 2px #ffffff, /* Tăng blur-radius và thêm spread-radius */
-            0 8px 32px 4px #ffffff; /* Tăng blur-radius và thêm spread-radius */
+    box-shadow: 0 4px 8px 2px #ffffff,
+            0 8px 32px 4px #ffffff;
    
 }
 .image-container:hover {

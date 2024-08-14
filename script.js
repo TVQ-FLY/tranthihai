@@ -1,24 +1,3 @@
-// // Ẩn nội dung trang web cho đến khi nhập mật khẩu đúng
-// const a = document.querySelector(".content-body");
-
-// function askForPassword() {
-//     const correctPassword = '27072004'; // Thay thế bằng mật khẩu của bạn
-//     const password = prompt('Nhập vào ngày sinh của bạn (ví dụ: 01012001)');
-
-//     if (password === correctPassword) {
-//         // Khi mật khẩu đúng, hiển thị nội dung và bắt đầu quá trình loading
-//         a.classList.remove("hidden");
-//         startLoading();
-//     } else {
-//         alert('Mật khẩu không đúng, bạn không phải là cô ấy vui lòng dừng truy cập =((');
-//         // Chuyển hướng người dùng ra khỏi trang
-//         window.location.href = 'https://google.com';
-//     }
-// }
-
-// askForPassword();
-
-
 // Hiển thị ảnh (Thêm ảnh theo cấu trúc img + số thứ tự đuôi PNG vào Image)
 // Tăng số lượng ảnh hiển thị ở biến totalImages
 document.addEventListener("DOMContentLoaded", function() {
