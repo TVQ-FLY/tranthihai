@@ -45,7 +45,7 @@ document.addEventListener('contextmenu', function(event) {
     // Ngăn chặn menu chuột phải mặc định
     event.preventDefault();
     // Hiển thị thông báo
-    alert('Xin chào ! \nHành động của bạn bị vô hiệu hóa ở Website này !\n- Sent by Trần Văn Quyền -');
+    alert('Xin chào ! \nHành động của bạn bị vô hiệu hóa !\n- Sent by Trần Văn Quyền -');
 });
 
 // Lắng nghe sự kiện 'keydown' để kiểm tra khi người dùng nhấn phím F12
