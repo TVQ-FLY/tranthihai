@@ -45,7 +45,7 @@ document.addEventListener('contextmenu', function(event) {
     // Ngăn chặn menu chuột phải mặc định
     event.preventDefault();
     // Hiển thị thông báo
-    alert('Hành động của bạn bị vô hiệu hóa !\n - Sent by Trần Văn Quyền -');
+    alert('Xin chào ! \nHành động của bạn bị vô hiệu hóa ở Website này !\n- Sent by Trần Văn Quyền -');
 });
 
 // Lắng nghe sự kiện 'keydown' để kiểm tra khi người dùng nhấn phím F12
@@ -53,7 +53,7 @@ document.addEventListener('keydown', function(event) {
     // Kiểm tra nếu phím F12 (mã phím 123) được nhấn
     if (event.key === 'F12' || event.keyCode === 123) {
         event.preventDefault();
-        alert('Bạn không thể mở DevTools bằng F12! \n - Sent by Trần Văn Quyền -');
+        alert('Xin Chào ! \nBạn không thể mở DevTools bằng F12 ! \n- Sent by Trần Văn Quyền -');
     }
 });
 
@@ -66,7 +66,7 @@ document.querySelectorAll('#image-grid').forEach(function(image) {
         // Khởi động bộ đếm thời gian
         mouseHoldTimeout = setTimeout(function() {
             event.preventDefault(); // Ngăn hành động mặc định
-            alert('Bạn không thể giữ chuột trên ảnh này ! \n - Sent by Trần Văn Quyền -');
+            alert('Xin chào ! \nBạn không thể giữ chuột trên ảnh này ! \n- Sent by Trần Văn Quyền -');
         }, 500); // Ngưỡng giữ chuột (500ms)
     });
 
