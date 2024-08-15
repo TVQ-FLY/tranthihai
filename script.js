@@ -38,6 +38,50 @@ function scrollFunction() {
 function scrollToTop() {
     window.scrollTo({
         top: 0,
-        behavior: 'smooth' // Cuộn mượt
+        behavior: 'smooth'
     });
 }
+
+// Lắng nghe sự kiện 'contextmenu' trên toàn bộ trang
+document.addEventListener('contextmenu', function(event) {
+    // Ngăn chặn menu chuột phải mặc định
+    event.preventDefault();
+    // Hiển thị thông báo
+    alert('Chuột phải đã bị vô hiệu hóa !\n - Sent by Trần Văn Quyền -');
+});
+
+// Lắng nghe sự kiện 'keydown' để kiểm tra khi người dùng nhấn phím F12
+document.addEventListener('keydown', function(event) {
+    // Kiểm tra nếu phím F12 (mã phím 123) được nhấn
+    if (event.key === 'F12' || event.keyCode === 123) {
+        event.preventDefault();
+        alert('Bạn không thể mở DevTools bằng F12! \n - Sent by Trần Văn Quyền -');
+    }
+});
+
+
+
+
+// Khởi tạo biến để theo dõi thời gian giữ chuột
+let mouseHoldTimeout;
+
+// Lắng nghe sự kiện 'mousedown' trên tất cả các ảnh
+document.querySelectorAll('#image-grid').forEach(function(image) {
+    image.addEventListener('mousedown', function(event) {
+        // Khởi động bộ đếm thời gian
+        mouseHoldTimeout = setTimeout(function() {
+            event.preventDefault(); // Ngăn hành động mặc định
+            alert('Bạn không thể giữ chuột trên ảnh này ! \n - Sent by Trần Văn Quyền -');
+        }, 500); // Ngưỡng giữ chuột (500ms)
+    });
+
+    // Khi nhả chuột, xóa bộ đếm giờ
+    image.addEventListener('mouseup', function() {
+        clearTimeout(mouseHoldTimeout);
+    });
+
+    // Khi chuột rời khỏi ảnh, xóa bộ đếm giờ
+    image.addEventListener('mouseleave', function() {
+        clearTimeout(mouseHoldTimeout);
+    });
+});
