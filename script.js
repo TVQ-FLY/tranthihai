@@ -16,9 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
-
 // Back top
-// Get the button
 let backToTopBtn = document.getElementById("backToTopBtn");
 
 // Show the button when the user scrolls down 20px from the top of the document
@@ -34,7 +32,7 @@ function scrollFunction() {
     }
 }
 
-// Cuộn mượt lên đầu trang khi nhấn vào nút
+// Smooth
 function scrollToTop() {
     window.scrollTo({
         top: 0,
@@ -47,7 +45,7 @@ document.addEventListener('contextmenu', function(event) {
     // Ngăn chặn menu chuột phải mặc định
     event.preventDefault();
     // Hiển thị thông báo
-    alert('Chuột phải đã bị vô hiệu hóa !\n - Sent by Trần Văn Quyền -');
+    alert('Hành động của bạn bị vô hiệu hóa !\n - Sent by Trần Văn Quyền -');
 });
 
 // Lắng nghe sự kiện 'keydown' để kiểm tra khi người dùng nhấn phím F12
@@ -60,11 +58,8 @@ document.addEventListener('keydown', function(event) {
 });
 
 
-
-
 // Khởi tạo biến để theo dõi thời gian giữ chuột
 let mouseHoldTimeout;
-
 // Lắng nghe sự kiện 'mousedown' trên tất cả các ảnh
 document.querySelectorAll('#image-grid').forEach(function(image) {
     image.addEventListener('mousedown', function(event) {
